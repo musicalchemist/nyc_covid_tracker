@@ -14,15 +14,7 @@ import math
 import sys
 from decouple import config
 
-# --------------------
-#       CHANGELOG
-# In prior versions, covid_data_url_raw was removed from website... so replaced with https://raw.githubusercontent.com/nychealth/coronavirus-data/master/totals/data-by-modzcta.csv
-# and had to add covid_data_totals_url to ref latest change in datetime
-# --------------------
-
-
 # DATA COLLECTION
-
 covid_data_url = 'https://github.com/nychealth/coronavirus-data'
 covid_data_totals_url = 'https://github.com/nychealth/coronavirus-data/blob/master/totals/data-by-modzcta.csv'
 covid_data_url_raw = 'https://raw.githubusercontent.com/nychealth/coronavirus-data/master/totals/data-by-modzcta.csv'
@@ -37,7 +29,6 @@ def get_soup(url):
     html = requests.get(url, headers={"User-Agent": my_user_agent})
     soup = BeautifulSoup(html.text, 'html.parser')
     return soup
-
 
 soup = get_soup(covid_data_totals_url)
 
