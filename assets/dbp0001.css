@@ -1,0 +1,105 @@
+body {
+  background-color: #1C1D22;
+  color: #ffffff;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #c65e59;
+}
+
+.header1style1 {
+  font-family: 'Francois One', sans-serif;
+  font-size:8vw;
+  color: #ffffff;
+  text-align:center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.h2date-wrap {
+  margin: 0 auto 10px auto;
+  width: fit-content;
+}
+
+#h2date {
+  font-weight: 500;
+  text-align: center;
+  padding: 0px 0px 5px 0px;
+  width: fit-content;
+  font-size:2.4vw;
+}
+
+#button {
+  width: 50%;
+  background-color: #7bafbc;
+  color: #fff;
+}
+
+.main-content {
+  border: 2px;
+  border-style: solid;
+  border-radius: 1px;
+  border-color: #7bafbc;
+  /* padding: 0.3rem;
+  background: linear-gradient(to right, #c65e59, #7bafbc) !important; */
+}
+
+
+/* TYPEWRITER START */
+
+/*The following made with help from https://css-tricks.com/snippets/css/typewriter-effect/ */
+
+#h2date {
+  overflow: hidden !important; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #c65e59; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* letter-spacing: .15em; */ /*Adjust as needed */
+  animation:
+    typing 1.2s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0% }
+  to { width: 100%}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #c65e59; }
+}
+
+/* TYPEWRITER END */
+
+.header1style1:hover {
+  animation-name: h1hover;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes h1hover {
+  from {color: #ffffff;}
+  to {color: #c65e59;}
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 1200px;
+  padding-right: 10px;
+  padding-left:  10px;
+}
+
+
+#front-page-footer {
+position:fixed;
+}

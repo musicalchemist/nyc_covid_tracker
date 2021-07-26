@@ -1,0 +1,2 @@
+*.csv filter=lfs diff=lfs merge=lfs -text
+ZIP_Code_Tabulation_Areas__ZCTAs_.csv filter=lfs diff=lfs merge=lfs -text

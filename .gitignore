@@ -1,0 +1,4 @@
+archive
+*.pyc
+.DS_Store
+.env
